@@ -1,6 +1,6 @@
 # Prop 3 vs. the Bike Network
 
-A static site comparing support for NYC's Nov 3, 2026 Proposal 3 (street safety charter amendment) in every election district with nearby protected bike infrastructure and car ownership, to show where support outruns the infrastructure. Layers: support gap, opportunity (support gap × car-free share), Yes share, bike infrastructure and car ownership.
+A static site comparing support for NYC's Nov 3, 2026 Proposal 3 (street safety charter amendment) in every election district with nearby protected bike infrastructure and car ownership, to show where support outruns the infrastructure. Layers: support gap, opportunity (support gap × car-free share × capped density), Yes share, bike infrastructure, car ownership and density.
 
 > This page was built with Claude, an AI model made by Anthropic. The data processing, analysis and code were AI-generated under human direction. Check figures against the listed sources before citing.
 
@@ -30,6 +30,7 @@ npx serve public
 - Election district shapes: NYC Planning release 25C. 8 districts redrawn for 2026 (3,064 votes) have no shape.
 - Bike routes: NYC DOT, New York City Bike Routes (NYC Open Data), current segments only. Scoring method is documented on the page.
 - Car ownership: U.S. Census Bureau ACS 2017–2021 5-year estimates (vehicles available), via NYC DCP Population FactFinder (https://github.com/NYCPlanning/db-factfinder).
+- Population density: ACS 2017–2021 total population, same DCP FactFinder extract.
 - Census tract boundaries: NYC DCP 2010 Census Tracts (20A) via https://github.com/nycehs/NYC_geography.
 - Inspiration: CUNY Center for Urban Research, NYC 2026 election map (https://www.urbanresearchmaps.org/electioncompare2026/).
 - Election district boundaries copy via https://github.com/ry-li/map-nyc-election.
