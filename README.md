@@ -1,5 +1,7 @@
 # Prop 3 vs. the Bike Network
 
+By Jack Satriano · [@satriano.io](https://bsky.app/profile/satriano.io) on Bluesky
+
 A static site comparing support for NYC's Nov 3, 2026 Proposal 3 (street safety charter amendment) in every election district with nearby protected bike infrastructure and car ownership, to show where support outruns the infrastructure. Layers: support gap, opportunity (support gap × car-free share × square-rooted density), Yes share, bike infrastructure, car ownership and density.
 
 > This page was built with Claude, an AI model made by Anthropic. The data processing, analysis and code were AI-generated under human direction. Check figures against the listed sources before citing.
