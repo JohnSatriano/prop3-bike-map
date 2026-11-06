@@ -160,6 +160,22 @@ footer a{color:inherit}
     </div>
     <p class="status" id="status"></p>
   </section>
+  <section class="panel" id="priority">
+    <h2>Opportunity</h2>
+    <p class="note">Support gap × share of households without a car × density factor: where support outruns the bike network, most households don't drive, and many people live.</p>
+    <p style="max-width:75ch">This layer weights the gap by how many households depend on something other than a car and by how many people a new lane would serve. The density factor is the square root of a precinct's density divided by the citywide median (about 53,000 residents per square mile), capped at 1. Any precinct at or above the median gets full credit, so Manhattan's very high densities don't push it ahead of dense parts of Brooklyn, the Bronx or Queens; a precinct at a quarter of the median gets half credit. A precinct whose Yes share ranks 40 points above its bike score, where 75% of households don't own a car and density is at the median, scores 40 × 0.75 × 1 = 30. Precincts where the bike network ranks at or above support have no shortfall and are shown flat; higher scores mean strong support, little protected infrastructure and many car-free households.</p>
+    <div class="method">
+      <div><h3 class="h3">Highest-scoring Assembly Districts</h3><ul class="adlist" id="prilist"></ul>
+      <p class="note" style="margin-top:8px">Vote-weighted average score across each district's precincts, then car-free share and number of precincts scoring 30 or more.</p></div>
+      <div><h3 class="h3">How to read it</h3>
+      <ul class="steps">
+        <li>Capping density at the median keeps Manhattan's share of the 250 highest-scoring precincts at 32; weighting by uncapped density would have raised it to 56.</li>
+        <li>Both inputs are relative. The gap compares precincts' rankings, so a high score means "underbuilt compared with the rest of the city," not an absolute shortage.</li>
+        <li>Car-free share is a five-year survey estimate spread from census tracts, so single-precinct values are approximate; clusters are more meaningful than individual precincts.</li>
+        <li>Yes share stands in for demand, but Proposal 3 also covered city property and office leasing.</li>
+      </ul></div>
+    </div>
+  </section>
   <section class="panel" id="scoring">
     <h2>Bike scoring</h2>
     <p class="note">How each precinct's bike infrastructure score is built, from the NYC DOT bike route file (current segments only).</p>
@@ -196,22 +212,6 @@ footer a{color:inherit}
       <div><h3 class="h3">Infrastructure most ahead of support</h3><ul class="adlist" id="over"></ul></div>
     </div>
     <p class="note" style="margin-top:10px">Assembly Districts, vote-weighted average gap. Neighborhood names are approximate.</p>
-  </section>
-  <section class="panel" id="priority">
-    <h2>Opportunity</h2>
-    <p class="note">Support gap × share of households without a car × density factor: where support outruns the bike network, most households don't drive, and many people live.</p>
-    <p style="max-width:75ch">This layer weights the gap by how many households depend on something other than a car and by how many people a new lane would serve. The density factor is the square root of a precinct's density divided by the citywide median (about 53,000 residents per square mile), capped at 1. Any precinct at or above the median gets full credit, so Manhattan's very high densities don't push it ahead of dense parts of Brooklyn, the Bronx or Queens; a precinct at a quarter of the median gets half credit. A precinct whose Yes share ranks 40 points above its bike score, where 75% of households don't own a car and density is at the median, scores 40 × 0.75 × 1 = 30. Precincts where the bike network ranks at or above support have no shortfall and are shown flat; higher scores mean strong support, little protected infrastructure and many car-free households.</p>
-    <div class="method">
-      <div><h3 class="h3">Highest-scoring Assembly Districts</h3><ul class="adlist" id="prilist"></ul>
-      <p class="note" style="margin-top:8px">Vote-weighted average score across each district's precincts, then car-free share and number of precincts scoring 30 or more.</p></div>
-      <div><h3 class="h3">How to read it</h3>
-      <ul class="steps">
-        <li>Capping density at the median keeps Manhattan's share of the 250 highest-scoring precincts at 32; weighting by uncapped density would have raised it to 56.</li>
-        <li>Both inputs are relative. The gap compares precincts' rankings, so a high score means "underbuilt compared with the rest of the city," not an absolute shortage.</li>
-        <li>Car-free share is a five-year survey estimate spread from census tracts, so single-precinct values are approximate; clusters are more meaningful than individual precincts.</li>
-        <li>Yes share stands in for demand, but Proposal 3 also covered city property and office leasing.</li>
-      </ul></div>
-    </div>
   </section>
   <section class="panel" id="cars">
     <h2>Car ownership and support</h2>
